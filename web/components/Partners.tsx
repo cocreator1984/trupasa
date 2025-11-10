@@ -1,7 +1,7 @@
 import {getTranslations} from "next-intl/server";
 
 export default async function Partners() {
-  const t = await getTranslations();
+  const t = await getTranslations('default');
   const items = ['Partner A', 'Partner B', 'Partner C', 'Partner D', 'Partner E', 'Partner F'];
   return (
     <section id="partners" className="bg-white">
@@ -19,3 +19,4 @@ export default async function Partners() {
     </section>
   );
 }
+

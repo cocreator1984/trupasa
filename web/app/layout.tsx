@@ -1,6 +1,9 @@
 import './globals.css';
 import type { Metadata } from 'next';
-import {getLocale} from 'next-intl/server';
+import {NextIntlClientProvider} from 'next-intl';
+import {getLocale, getMessages} from 'next-intl/server';
+import {cookies} from 'next/headers';
+import CookieConsent from '../components/CookieConsent';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://trupasa.example'),
@@ -25,10 +28,25 @@ export const metadata: Metadata = {
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
   const locale = await getLocale();
+  const messages = await getMessages();
+  const consentGiven = cookies().get('cookie_consent')?.value === 'true';
   return (
-    <html lang={locale}>
+    <html lang={locale} suppressHydrationWarning>
       <body>
-        {children}
+        <NextIntlClientProvider locale={locale} messages={messages}>
+          {children}
+          {/* Cookie banner lives client-side */}
+          <CookieConsent />
+        </NextIntlClientProvider>
+        {/* GA placeholder gated by consent. Replace with real snippet later. */}
+        {consentGiven && (
+          <script
+            id="ga-placeholder"
+            dangerouslySetInnerHTML={{
+              __html: 'window.GA_CONSENTED = true;'
+            }}
+          />
+        )}
       </body>
     </html>
   );

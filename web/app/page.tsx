@@ -5,9 +5,10 @@ import Partners from "../components/Partners";
 import Testimonials from "../components/Testimonials";
 import Logo from '../components/Logo';
 import LanguageSwitcher from '../components/LanguageSwitcher';
+import Newsletter from '../components/Newsletter';
 
 export default async function Home() {
-  const t = await getTranslations();
+  const t = await getTranslations('default');
   return (
     <main>
       <header className="border-b bg-white/80 backdrop-blur sticky top-0 z-10">
@@ -55,30 +56,7 @@ export default async function Home() {
       <Partners />
       <Testimonials />
 
-      <section id="newsletter" className="bg-white">
-        <div className="container py-20">
-          <h2 className="text-3xl font-semibold">{t('newsletter.title')}</h2>
-          <p className="text-gray-600 mt-2 max-w-3xl">{t('newsletter.subtitle')}</p>
-          <form className="mt-8 grid grid-cols-1 md:grid-cols-5 gap-4" >
-            <label className="md:col-span-2">
-              <span className="sr-only">{t('newsletter.email.label')}</span>
-              <input type="email" required placeholder={t('newsletter.email.placeholder')} className="w-full rounded-md border px-4 py-3" />
-            </label>
-            <label className="md:col-span-2">
-              <span className="sr-only">{t('newsletter.role.label')}</span>
-              <select className="w-full rounded-md border px-4 py-3">
-                <option value="gov">{t('newsletter.role.gov')}</option>
-                <option value="inst">{t('newsletter.role.inst')}</option>
-                <option value="dev">{t('newsletter.role.dev')}</option>
-                <option value="gen">{t('newsletter.role.gen')}</option>
-              </select>
-            </label>
-            <button className="md:col-span-1 bg-[var(--trust-green)] text-white rounded-md px-4 py-3 font-medium hover:opacity-90" type="button">
-              {t('newsletter.cta')}
-            </button>
-          </form>
-        </div>
-      </section>
+      <Newsletter />
 
       <section id="insights" className="bg-white">
         <div className="container py-20">

@@ -1,7 +1,7 @@
 import {getTranslations} from "next-intl/server";
 
 export default async function HowItWorks() {
-  const t = await getTranslations();
+  const t = await getTranslations('default');
   const steps = [
     {title: t('how.steps.1.title'), desc: t('how.steps.1.desc')},
     {title: t('how.steps.2.title'), desc: t('how.steps.2.desc')},
@@ -26,3 +26,4 @@ export default async function HowItWorks() {
     </section>
   );
 }
+

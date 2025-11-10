@@ -1,84 +1,88 @@
 {
   "brand": "Trupasa",
-  "nav.how": "How It Works",
-  "nav.architecture": "Architecture",
-  "nav.partners": "Partners",
-  "nav.insights": "Insights",
-  "nav.faqs": "FAQs",
-  "nav.contact": "Contact",
-  "hero.title": "Non-Inflationary Digital Reserves for National Prosperity.",
-  "hero.sub": "Trupasa empowers governments with a sovereign digital reserve backed by U.S. Treasury Bills - generating annual income that funds public development projects without printing new money.",
-  "cta.join": "Join the Waitlist",
-  "cta.how": "How it works",
-
-  "how.title": "How It Works",
-  "how.subtitle": "A disciplined, end-to-end framework for sovereign digital reserves and transparent yield deployment.",
-  "how.steps.1.title": "Digital Reserve",
-  "how.steps.1.desc": "A sovereign digital reserve is created and custodied securely.",
-  "how.steps.2.title": "Invest in Treasuries",
-  "how.steps.2.desc": "Reserves are backed 1:1 with short-dated U.S. Treasury Bills.",
-  "how.steps.3.title": "Generate Yield",
-  "how.steps.3.desc": "Risk-free yield accrues to protect purchasing power and create income.",
-  "how.steps.4.title": "Fund Projects",
-  "how.steps.4.desc": "Earnings are allocated to public development initiatives transparently.",
-
-  "architecture.title": "Architecture & Security",
-  "architecture.subtitle": "Transparent flows, segregated accounts, and institutional-grade controls.",
-  "architecture.diagram.placeholder": "Trupasa System Flow (placeholder)",
-  "architecture.points.1": "100% reserve backing in U.S. Treasury Bills",
-  "architecture.points.2": "Segregated accounts and secure channels",
-  "architecture.points.3": "Transparency, reporting, and independent audits",
-  "architecture.points.4": "KYC/AML and governance controls",
-  "architecture.points.5": "Reliability and operational security",
-
-  "partners.title": "Partners",
-  "partners.subtitle": "Logo placeholders; replace with vetted partners and certifications.",
-
-  "testimonials.title": "Testimonials",
-  "testimonials.1.q": "A disciplined approach to non-inflationary funding.",
-  "testimonials.1.a": "Finance Minister (Placeholder)",
-  "testimonials.2.q": "Sovereign-grade risk controls with transparent reserves.",
-  "testimonials.2.a": "Central Bank Official (Placeholder)",
-
-  "newsletter.title": "Join the Waitlist",
-  "newsletter.subtitle": "Receive updates on Trupasa and sovereign digital reserve developments.",
-  "newsletter.email.label": "Email",
-  "newsletter.email.placeholder": "Email address",
-  "newsletter.role.label": "I'm a",
-  "newsletter.role.gov": "Government Representative",
-  "newsletter.role.inst": "Institutional Investor",
-  "newsletter.role.dev": "Development Partner",
-  "newsletter.role.gen": "General Interest",
-  "newsletter.cta": "Subscribe for Updates",
-  "newsletter.success": "Thank you — you're on the list.",
-
-  "insights.title": "Insights",
-  "insights.subtitle": "Perspectives on sovereign finance, digital reserves, and development impacts.",
-  "insights.items.1.title": "Sovereign Digital Reserves: A Primer",
-  "insights.items.1.excerpt": "How non-inflationary reserves can fund public goods sustainably.",
-  "insights.items.2.title": "Operational Safeguards for National-Scale Infrastructure",
-  "insights.items.2.excerpt": "Risk controls, transparency, and institutional-grade processes.",
-  "insights.items.3.title": "Deploying Yield to Development Priorities",
-  "insights.items.3.excerpt": "Aligning investment income with measurable public outcomes.",
-  "insights.readMore": "Read more",
-
-  "faqs.title": "FAQs",
-  "faqs.1.q": "What is Trupasa?",
-  "faqs.1.a": "Trupasa is a sovereign financial infrastructure that enables governments to establish a digital reserve fully backed by U.S. Treasury Bills, generating risk-free yield to fund public projects without creating inflation.",
-  "faqs.2.q": "How does this avoid inflation?",
-  "faqs.2.a": "Reserves are fully backed by existing assets (T-Bills) rather than newly issued money. Yield funds projects while the principal remains intact and backed.",
-  "faqs.3.q": "How are reserves safeguarded?",
-  "faqs.3.a": "Through segregated accounts, audited reporting, and institutional-grade controls including KYC/AML and governance oversight.",
-  "faqs.4.q": "Who is Trupasa for?",
-  "faqs.4.a": "National and subnational governments, and institutional partners seeking transparent, non-inflationary public finance mechanisms.",
-
-  "footer.copyright": "© 2025 Trupasa. All rights reserved.",
-  "footer.linkedin": "LinkedIn",
-  "footer.twitter": "X",
-  "footer.youtube": "YouTube",
-
-  "lang.switch": "Language",
-  "lang.en": "EN",
-  "lang.sv": "SV",
-  "lang.so": "SO"
+  "nav": {
+    "how": "How It Works",
+    "architecture": "Architecture",
+    "partners": "Partners",
+    "insights": "Insights",
+    "faqs": "FAQs",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Non-Inflationary Digital Reserves for National Prosperity.",
+    "sub": "Trupasa empowers governments with a sovereign digital reserve backed by U.S. Treasury Bills - generating annual income that funds public development projects without printing new money."
+  },
+  "cta": {
+    "join": "Join the Waitlist",
+    "how": "How it works"
+  },
+  "how": {
+    "title": "How It Works",
+    "subtitle": "A disciplined, end-to-end framework for sovereign digital reserves and transparent yield deployment.",
+    "steps": {
+      "1": {"title": "Digital Reserve", "desc": "A sovereign digital reserve is created and custodied securely."},
+      "2": {"title": "Invest in Treasuries", "desc": "Reserves are backed 1:1 with short-dated U.S. Treasury Bills."},
+      "3": {"title": "Generate Yield", "desc": "Risk-free yield accrues to protect purchasing power and create income."},
+      "4": {"title": "Fund Projects", "desc": "Earnings are allocated to public development initiatives transparently."}
+    }
+  },
+  "architecture": {
+    "title": "Architecture & Security",
+    "subtitle": "Transparent flows, segregated accounts, and institutional-grade controls.",
+    "diagram": {"placeholder": "Trupasa System Flow (placeholder)"},
+    "points": {
+      "1": "100% reserve backing in U.S. Treasury Bills",
+      "2": "Segregated accounts and secure channels",
+      "3": "Transparency, reporting, and independent audits",
+      "4": "KYC/AML and governance controls",
+      "5": "Reliability and operational security"
+    }
+  },
+  "partners": {
+    "title": "Partners",
+    "subtitle": "Logo placeholders; replace with vetted partners and certifications."
+  },
+  "testimonials": {
+    "title": "Testimonials",
+    "1": {"q": "A disciplined approach to non-inflationary funding.", "a": "Finance Minister (Placeholder)"},
+    "2": {"q": "Sovereign-grade risk controls with transparent reserves.", "a": "Central Bank Official (Placeholder)"}
+  },
+  "newsletter": {
+    "title": "Join the Waitlist",
+    "subtitle": "Receive updates on Trupasa and sovereign digital reserve developments.",
+    "email": {"label": "Email", "placeholder": "Email address"},
+    "role": {
+      "label": "I'm a",
+      "gov": "Government Representative",
+      "inst": "Institutional Investor",
+      "dev": "Development Partner",
+      "gen": "General Interest"
+    },
+    "cta": "Subscribe for Updates",
+    "success": "Thank you - you're on the list."
+  },
+  "insights": {
+    "title": "Insights",
+    "subtitle": "Perspectives on sovereign finance, digital reserves, and development impacts.",
+    "items": {
+      "1": {"title": "Sovereign Digital Reserves: A Primer", "excerpt": "How non-inflationary reserves can fund public goods sustainably."},
+      "2": {"title": "Operational Safeguards for National-Scale Infrastructure", "excerpt": "Risk controls, transparency, and institutional-grade processes."},
+      "3": {"title": "Deploying Yield to Development Priorities", "excerpt": "Aligning investment income with measurable public outcomes."}
+    },
+    "readMore": "Read more"
+  },
+  "faqs": {
+    "title": "FAQs",
+    "1": {"q": "What is Trupasa?", "a": "Trupasa is a sovereign financial infrastructure that enables governments to establish a digital reserve fully backed by U.S. Treasury Bills, generating risk-free yield to fund public projects without creating inflation."},
+    "2": {"q": "How does this avoid inflation?", "a": "Reserves are fully backed by existing assets (T-Bills) rather than newly issued money. Yield funds projects while the principal remains intact and backed."},
+    "3": {"q": "How are reserves safeguarded?", "a": "Through segregated accounts, audited reporting, and institutional-grade controls including KYC/AML and governance oversight."},
+    "4": {"q": "Who is Trupasa for?", "a": "National and subnational governments, and institutional partners seeking transparent, non-inflationary public finance mechanisms."}
+  },
+  "footer": {
+    "copyright": "c 2025 Trupasa. All rights reserved.",
+    "linkedin": "LinkedIn",
+    "twitter": "X",
+    "youtube": "YouTube"
+  },
+  "lang": {"switch": "Language", "en": "EN", "sv": "SV", "so": "SO"}
 }

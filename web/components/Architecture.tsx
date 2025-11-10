@@ -1,7 +1,7 @@
 import {getTranslations} from "next-intl/server";
 
 export default async function Architecture() {
-  const t = await getTranslations();
+  const t = await getTranslations('default');
   return (
     <section id="architecture" className="bg-white">
       <div className="container py-20">
@@ -23,3 +23,4 @@ export default async function Architecture() {
     </section>
   );
 }
+
