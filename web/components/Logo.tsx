@@ -2,6 +2,8 @@
 import Image from "next/image";
 import clsx from "clsx";
 
+const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 type LogoSize = "sm" | "md" | "lg" | "xl" | "2xl" | "xxl" | "3xl";
 
 const sizeMap: Record<LogoSize, { w: number; h: number; sizes: string }> = {
@@ -26,9 +28,10 @@ export default function Logo({
   priority?: boolean;
 }) {
   const cfg = sizeMap[size] ?? sizeMap.lg;
+  const src = `${BASE_PATH}/trupasa.jpeg`;
   return (
     <Image
-      src="/trupasa.jpeg"
+      src={src}
       alt={alt}
       width={cfg.w}
       height={cfg.h}
