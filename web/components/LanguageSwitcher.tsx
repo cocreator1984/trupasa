@@ -1,5 +1,5 @@
 "use client";
-import { useTransition } from "react";
+import Link from 'next/link';
 import {useLocale} from 'next-intl';
 
 const locales = [
@@ -9,26 +9,16 @@ const locales = [
 ];
 
 export default function LanguageSwitcher() {
-  const [isPending, startTransition] = useTransition();
   const active = useLocale();
-
-  const setLocale = (code: string) => {
-    startTransition(() => {
-      document.cookie = `NEXT_LOCALE=${code}; path=/; max-age=${60 * 60 * 24 * 365}`;
-      window.location.reload();
-    });
-  };
-
   return (
     <div className="flex items-center gap-2">
       {locales.map((l) => {
         const isActive = active === l.code;
         return (
-          <button
+          <Link
             key={l.code}
-            onClick={() => setLocale(l.code)}
-            disabled={isPending}
-            aria-pressed={isActive}
+            href={`/${l.code}/`}
+            prefetch={false}
             aria-current={isActive ? 'true' : undefined}
             className={
               `text-sm rounded px-2 py-1 border ${
@@ -39,7 +29,7 @@ export default function LanguageSwitcher() {
             }
           >
             {l.label}
-          </button>
+          </Link>
         );
       })}
     </div>

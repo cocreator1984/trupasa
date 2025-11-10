@@ -2,6 +2,9 @@
 import {useState} from 'react';
 import {useTranslations} from 'next-intl';
 
+const isStatic = true; // export build is static on Pages
+const FORMSPREE = process.env.NEXT_PUBLIC_FORMSPREE_ENDPOINT || '';
+
 export default function Newsletter() {
   const t = useTranslations('default');
   const [status, setStatus] = useState<'idle'|'loading'|'success'|'error'>('idle');
@@ -11,30 +14,36 @@ export default function Newsletter() {
     e.preventDefault();
     const form = e.currentTarget;
     const formData = new FormData(form);
-    // Honeypot check
     if ((formData.get('company') as string)?.length) {
       setStatus('success');
       return;
     }
-    setStatus('loading');
-    setError(null);
-    const payload = {
-      email: formData.get('email'),
-      role: formData.get('role')
-    };
-    try {
-      const res = await fetch('/api/subscribe', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(payload)
-      });
-      if (!res.ok) throw new Error('Request failed');
-      setStatus('success');
-      form.reset();
-    } catch (err) {
-      setStatus('error');
-      setError('Something went wrong.');
+
+    // Prefer Formspree if configured
+    if (FORMSPREE) {
+      try {
+        setStatus('loading');
+        setError(null);
+        const res = await fetch(FORMSPREE, {
+          method: 'POST',
+          headers: { 'Accept': 'application/json' },
+          body: formData
+        });
+        if (!res.ok) throw new Error('Request failed');
+        setStatus('success');
+        form.reset();
+        return;
+      } catch (err) {
+        setStatus('error');
+        setError('Submission failed. Please try email.');
+        return;
+      }
     }
+
+    // Fallback: mailto for static Pages demo
+    const email = encodeURIComponent(String(formData.get('email') || ''));
+    const role = encodeURIComponent(String(formData.get('role') || ''));
+    window.location.href = `mailto:info@trupasa.org?subject=Waitlist%20Signup&body=Email:%20${email}%0ARole:%20${role}`;
   }
 
   return (
@@ -43,7 +52,6 @@ export default function Newsletter() {
         <h2 className="text-3xl font-semibold">{t('newsletter.title')}</h2>
         <p className="text-gray-600 mt-2 max-w-3xl">{t('newsletter.subtitle')}</p>
         <form className="mt-8 grid grid-cols-1 md:grid-cols-5 gap-4" onSubmit={onSubmit}>
-          {/* Honeypot */}
           <input type="text" name="company" className="hidden" tabIndex={-1} autoComplete="off" />
 
           <label className="md:col-span-2">
@@ -73,5 +81,3 @@ export default function Newsletter() {
     </section>
   );
 }
-
-

@@ -1,7 +1,4 @@
-import {getTranslations} from "next-intl/server";
-
-export default async function Architecture() {
-  const t = await getTranslations('default');
+export default async function Architecture({ t }: { t: (k: string) => string }) {
   return (
     <section id="architecture" className="bg-white">
       <div className="container py-20">
@@ -12,16 +9,14 @@ export default async function Architecture() {
             {t('architecture.diagram.placeholder')}
           </div>
           <ul className="space-y-3 text-sm text-gray-700">
-            <li>• {t('architecture.points.1')}</li>
-            <li>• {t('architecture.points.2')}</li>
-            <li>• {t('architecture.points.3')}</li>
-            <li>• {t('architecture.points.4')}</li>
-            <li>• {t('architecture.points.5')}</li>
+            <li> {t('architecture.points.1')}</li>
+            <li> {t('architecture.points.2')}</li>
+            <li> {t('architecture.points.3')}</li>
+            <li> {t('architecture.points.4')}</li>
+            <li> {t('architecture.points.5')}</li>
           </ul>
         </div>
       </div>
     </section>
   );
 }
-
-

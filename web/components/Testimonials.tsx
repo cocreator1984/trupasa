@@ -1,7 +1,4 @@
-import {getTranslations} from "next-intl/server";
-
-export default async function Testimonials() {
-  const t = await getTranslations('default');
+export default async function Testimonials({ t }: { t: (k: string) => string }) {
   const items = [
     { q: t('testimonials.1.q'), a: t('testimonials.1.a') },
     { q: t('testimonials.2.q'), a: t('testimonials.2.a') }
@@ -22,5 +19,3 @@ export default async function Testimonials() {
     </section>
   );
 }
-
-

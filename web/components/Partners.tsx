@@ -1,7 +1,4 @@
-import {getTranslations} from "next-intl/server";
-
-export default async function Partners() {
-  const t = await getTranslations('default');
+export default async function Partners({ t }: { t: (k: string) => string }) {
   const items = ['Partner A', 'Partner B', 'Partner C', 'Partner D', 'Partner E', 'Partner F'];
   return (
     <section id="partners" className="bg-white">
@@ -19,5 +16,3 @@ export default async function Partners() {
     </section>
   );
 }
-
-
