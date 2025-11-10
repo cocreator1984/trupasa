@@ -1,88 +1,88 @@
 {
   "brand": "Trupasa",
   "nav": {
-    "how": "How It Works",
-    "architecture": "Architecture",
-    "partners": "Partners",
-    "insights": "Insights",
-    "faqs": "FAQs",
-    "contact": "Contact"
+    "how": "Sida ay u shaqayso",
+    "architecture": "Qaab‑dhismeed & Amni",
+    "partners": "La‑hawlgalayaal",
+    "insights": "Aragtiyo",
+    "faqs": "Su'aalaha La Isweydiiyo",
+    "contact": "Xiriir"
   },
   "hero": {
-    "title": "Non-Inflationary Digital Reserves for National Prosperity.",
-    "sub": "Trupasa empowers governments with a sovereign digital reserve backed by U.S. Treasury Bills - generating annual income that funds public development projects without printing new money."
+    "title": "Kayd Dijitaal Aan Kicin Sicir‑barar oo loogu talagalay Barwaaqada Qaranka.",
+    "sub": "Trupasa waxay dawladaha awood siisaa inay sameeyaan kayd dijitaal qarameed oo ay dammaanad qaadaan waraaqaha deynta Mareykanka (T‑Bills) — kaas oo soo saara dakhli sanadle ah si loo maalgeliyo mashaariicda horumarinta dadweynaha iyada oo aan la daabicin lacag cusub."
   },
   "cta": {
-    "join": "Join the Waitlist",
-    "how": "How it works"
+    "join": "Ku biir liiska sugitaanka",
+    "how": "Sida ay u shaqayso"
   },
   "how": {
-    "title": "How It Works",
-    "subtitle": "A disciplined, end-to-end framework for sovereign digital reserves and transparent yield deployment.",
+    "title": "Sida ay u shaqayso",
+    "subtitle": "Hannaanka nidaamsan ee dhammaadka‑ilaa‑dhammaadka ee kayd dijitaal qarameed iyo qaybinta daah‑furan ee dakhliyada.",
     "steps": {
-      "1": {"title": "Digital Reserve", "desc": "A sovereign digital reserve is created and custodied securely."},
-      "2": {"title": "Invest in Treasuries", "desc": "Reserves are backed 1:1 with short-dated U.S. Treasury Bills."},
-      "3": {"title": "Generate Yield", "desc": "Risk-free yield accrues to protect purchasing power and create income."},
-      "4": {"title": "Fund Projects", "desc": "Earnings are allocated to public development initiatives transparently."}
+      "1": {"title": "Kayd Dijitaal", "desc": "Kayd dijitaal qarameed ayaa la abuuraa oo si ammaan ah loo ilaaliyaa."},
+      "2": {"title": "Maalgashi T‑Bills", "desc": "Kaydka waxaa 1:1 ugu dammaanad ah waraaqaha deynta gaagaaban ee Mareykanka."},
+      "3": {"title": "Abuur Dakhli", "desc": "Dakhli khatar‑yar ayaa urura si loo ilaaliyo awoodda wax‑iibsiga loona abuuro soo‑galitaan."},
+      "4": {"title": "Mashaariic Maalgelin", "desc": "Dakhligu si daah‑furan ayaa loogu qoondeeyaa mashaariicda horumarinta dadweynaha."}
     }
   },
   "architecture": {
-    "title": "Architecture & Security",
-    "subtitle": "Transparent flows, segregated accounts, and institutional-grade controls.",
-    "diagram": {"placeholder": "Trupasa System Flow (placeholder)"},
+    "title": "Qaab‑dhismeed & Amni",
+    "subtitle": "Socod daah‑furan, xisaabaad kala soocan, iyo xakameyn heer hay'ad.",
+    "diagram": {"placeholder": "Socodka Nidaamka Trupasa (placeholder)"},
     "points": {
-      "1": "100% reserve backing in U.S. Treasury Bills",
-      "2": "Segregated accounts and secure channels",
-      "3": "Transparency, reporting, and independent audits",
-      "4": "KYC/AML and governance controls",
-      "5": "Reliability and operational security"
+      "1": "100% kayd dammaanad ah oo ku jira T‑Bills ee Mareykanka",
+      "2": "Xisaabaad kala soocan iyo marinnada ammaan ah",
+      "3": "Daah‑fur, warbixin iyo kormeer madaxbannaan",
+      "4": "KYC/AML iyo maamul wanaag",
+      "5": "La isku halayn karo iyo amniga hawlgalka"
     }
   },
   "partners": {
-    "title": "Partners",
-    "subtitle": "Logo placeholders; replace with vetted partners and certifications."
+    "title": "La‑hawlgalayaal",
+    "subtitle": "Boosas calaamado; beddel marka la xaqiijiyo la‑hawlgalayaasha iyo shahaadooyinka."
   },
   "testimonials": {
-    "title": "Testimonials",
-    "1": {"q": "A disciplined approach to non-inflationary funding.", "a": "Finance Minister (Placeholder)"},
-    "2": {"q": "Sovereign-grade risk controls with transparent reserves.", "a": "Central Bank Official (Placeholder)"}
+    "title": "Markhaatiyo",
+    "1": {"q": "Hab nidaamsan oo maalgelin aan sicir‑barar keenin.", "a": "Wasiirka Maaliyadda (boosas)"},
+    "2": {"q": "Xakameyn heer qaran oo leh kayd hufan.", "a": "Sarkaal Bangiga Dhexe (boosas)"}
   },
   "newsletter": {
-    "title": "Join the Waitlist",
-    "subtitle": "Receive updates on Trupasa and sovereign digital reserve developments.",
-    "email": {"label": "Email", "placeholder": "Email address"},
+    "title": "Ku biir liiska sugitaanka",
+    "subtitle": "Hel warbixinno ku saabsan Trupasa iyo kaydka dijitaal ee qarameed.",
+    "email": {"label": "Email", "placeholder": "Cinwaanka email‑ka"},
     "role": {
-      "label": "I'm a",
-      "gov": "Government Representative",
-      "inst": "Institutional Investor",
-      "dev": "Development Partner",
-      "gen": "General Interest"
+      "label": "Waxaan ahay",
+      "gov": "Wakiilka Dawladda",
+      "inst": "Maalgashade Hay'adeed",
+      "dev": "Lammaane Horumarineed",
+      "gen": "Dan guud"
     },
-    "cta": "Subscribe for Updates",
-    "success": "Thank you - you're on the list."
+    "cta": "Ku qor is‑diiwaan gelinta",
+    "success": "Mahadsanid — liiska waad ku jirtaa."
   },
   "insights": {
-    "title": "Insights",
-    "subtitle": "Perspectives on sovereign finance, digital reserves, and development impacts.",
+    "title": "Aragtiyo",
+    "subtitle": "Aragtiyo ku saabsan maaliyadda qaran, kaydka dijitaal, iyo saameynta horumarinta.",
     "items": {
-      "1": {"title": "Sovereign Digital Reserves: A Primer", "excerpt": "How non-inflationary reserves can fund public goods sustainably."},
-      "2": {"title": "Operational Safeguards for National-Scale Infrastructure", "excerpt": "Risk controls, transparency, and institutional-grade processes."},
-      "3": {"title": "Deploying Yield to Development Priorities", "excerpt": "Aligning investment income with measurable public outcomes."}
+      "1": {"title": "Kayd Dijitaal oo Qarameed: Hordhac", "excerpt": "Sida kayd aan sicir‑barar kicin uu u maalgelin karo adeegyada dadweynaha si waara."},
+      "2": {"title": "Ilaalinta hawlgalka ee kaabayaasha heer qaran", "excerpt": "Xakameyn halis, daah‑fur iyo habraacyo heer hay'ad."},
+      "3": {"title": "U qoondeynta dakhliyada mudnaanta horumarinta", "excerpt": "Isku xidhka dakhliyada maalgashi iyo natiijooyin la cabbiri karo."}
     },
-    "readMore": "Read more"
+    "readMore": "Akhri dheeraad"
   },
   "faqs": {
-    "title": "FAQs",
-    "1": {"q": "What is Trupasa?", "a": "Trupasa is a sovereign financial infrastructure that enables governments to establish a digital reserve fully backed by U.S. Treasury Bills, generating risk-free yield to fund public projects without creating inflation."},
-    "2": {"q": "How does this avoid inflation?", "a": "Reserves are fully backed by existing assets (T-Bills) rather than newly issued money. Yield funds projects while the principal remains intact and backed."},
-    "3": {"q": "How are reserves safeguarded?", "a": "Through segregated accounts, audited reporting, and institutional-grade controls including KYC/AML and governance oversight."},
-    "4": {"q": "Who is Trupasa for?", "a": "National and subnational governments, and institutional partners seeking transparent, non-inflationary public finance mechanisms."}
+    "title": "Su'aalaha La Isweydiiyo",
+    "1": {"q": "Waa maxay Trupasa?", "a": "Trupasa waa kaabayaal maaliyadeed oo suveren ah oo u oggolaanaya dawladaha inay dhisaan kayd dijitaal oo si buuxda ugu dammaanad ah T‑Bills Mareykan, kaas oo soo saara dakhli khatar‑yar si loo maalgeliyo mashaariicda dadweynaha iyada oo aan la abuurin sicir‑barar."},
+    "2": {"q": "Sidee ayay tani uga hortagtaa sicir‑bararka?", "a": "Kaydku wuxuu ku salaysan yahay hanti jira (T‑Bills) halkii laga daabici lahaa lacag cusub. Dakhligu wuxuu maalgelinayaa mashaariicda iyadoo raasamaalku weli yahay mid dammaanad ah."},
+    "3": {"q": "Sidee ayaa kaydka loo sugayaa?", "a": "Iyada oo loo marayo xisaabaad kala soocan, warbixinno la kormeero, iyo habraacyo heer hay'ad oo ay ku jiraan KYC/AML iyo kormeer maamul."},
+    "4": {"q": "Yaa loogu talagalay Trupasa?", "a": "Dawladaha qaran iyo kuwo hoose, iyo la‑hawlgalayaal hay'adeed oo raadinaya habab hufan oo aan sicir‑barar dhalin."}
   },
   "footer": {
-    "copyright": "c 2025 Trupasa. All rights reserved.",
+    "copyright": "© 2025 Trupasa. Xuquuqda oo dhan waa la ilaaliyay.",
     "linkedin": "LinkedIn",
     "twitter": "X",
     "youtube": "YouTube"
   },
-  "lang": {"switch": "Language", "en": "EN", "sv": "SV", "so": "SO"}
+  "lang": {"switch": "Luuqad", "en": "EN", "sv": "SV", "so": "SO"}
 }

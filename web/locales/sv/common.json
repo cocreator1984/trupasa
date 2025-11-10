@@ -1,88 +1,88 @@
 {
   "brand": "Trupasa",
   "nav": {
-    "how": "How It Works",
-    "architecture": "Architecture",
+    "how": "Hur det fungerar",
+    "architecture": "Arkitektur",
     "partners": "Partners",
-    "insights": "Insights",
-    "faqs": "FAQs",
-    "contact": "Contact"
+    "insights": "Insikter",
+    "faqs": "Vanliga frågor",
+    "contact": "Kontakt"
   },
   "hero": {
-    "title": "Non-Inflationary Digital Reserves for National Prosperity.",
-    "sub": "Trupasa empowers governments with a sovereign digital reserve backed by U.S. Treasury Bills - generating annual income that funds public development projects without printing new money."
+    "title": "Icke‑inflationsdrivna digitala reserver för nationellt välstånd.",
+    "sub": "Trupasa ger regeringar möjlighet att skapa en suverän digital reserv som backas av amerikanska statsskuldväxlar – och genererar årliga intäkter som finansierar offentliga utvecklingsprojekt utan att trycka nya pengar."
   },
   "cta": {
-    "join": "Join the Waitlist",
-    "how": "How it works"
+    "join": "Gå med i väntelistan",
+    "how": "Så fungerar det"
   },
   "how": {
-    "title": "How It Works",
-    "subtitle": "A disciplined, end-to-end framework for sovereign digital reserves and transparent yield deployment.",
+    "title": "Hur det fungerar",
+    "subtitle": "Ett disciplinerat, heltäckande ramverk för suveräna digitala reserver och transparent avkastningsfördelning.",
     "steps": {
-      "1": {"title": "Digital Reserve", "desc": "A sovereign digital reserve is created and custodied securely."},
-      "2": {"title": "Invest in Treasuries", "desc": "Reserves are backed 1:1 with short-dated U.S. Treasury Bills."},
-      "3": {"title": "Generate Yield", "desc": "Risk-free yield accrues to protect purchasing power and create income."},
-      "4": {"title": "Fund Projects", "desc": "Earnings are allocated to public development initiatives transparently."}
+      "1": {"title": "Digital reserv", "desc": "En suverän digital reserv skapas och förvaras säkert."},
+      "2": {"title": "Investera i statsskuldväxlar", "desc": "Reserven backas 1:1 av kortfristiga amerikanska T‑bills."},
+      "3": {"title": "Generera avkastning", "desc": "Riskfri avkastning ackumuleras för att skydda köpkraften och skapa inkomster."},
+      "4": {"title": "Finansiera projekt", "desc": "Intäkterna fördelas transparent till offentliga utvecklingsinitiativ."}
     }
   },
   "architecture": {
-    "title": "Architecture & Security",
-    "subtitle": "Transparent flows, segregated accounts, and institutional-grade controls.",
-    "diagram": {"placeholder": "Trupasa System Flow (placeholder)"},
+    "title": "Arkitektur & säkerhet",
+    "subtitle": "Transparenta flöden, separata konton och processer i institutionsklass.",
+    "diagram": {"placeholder": "Trupasa System Flow (platshållare)"},
     "points": {
-      "1": "100% reserve backing in U.S. Treasury Bills",
-      "2": "Segregated accounts and secure channels",
-      "3": "Transparency, reporting, and independent audits",
-      "4": "KYC/AML and governance controls",
-      "5": "Reliability and operational security"
+      "1": "100 % reservbackning i amerikanska T‑bills",
+      "2": "Separata konton och säkra kanaler",
+      "3": "Transparens, rapportering och oberoende revisioner",
+      "4": "KYC/AML och styrningskontroller",
+      "5": "Driftsäkerhet och informationssäkerhet"
     }
   },
   "partners": {
     "title": "Partners",
-    "subtitle": "Logo placeholders; replace with vetted partners and certifications."
+    "subtitle": "Logoplatshållare; ersätts med granskade partners och certifieringar."
   },
   "testimonials": {
-    "title": "Testimonials",
-    "1": {"q": "A disciplined approach to non-inflationary funding.", "a": "Finance Minister (Placeholder)"},
-    "2": {"q": "Sovereign-grade risk controls with transparent reserves.", "a": "Central Bank Official (Placeholder)"}
+    "title": "Omdömen",
+    "1": {"q": "Ett disciplinerat sätt att finansiera utan inflation.", "a": "Finansminister (platshållare)"},
+    "2": {"q": "Riskkontroller på statsnivå med transparenta reserver.", "a": "Tjänsteman på centralbanken (platshållare)"}
   },
   "newsletter": {
-    "title": "Join the Waitlist",
-    "subtitle": "Receive updates on Trupasa and sovereign digital reserve developments.",
-    "email": {"label": "Email", "placeholder": "Email address"},
+    "title": "Gå med i väntelistan",
+    "subtitle": "Få uppdateringar om Trupasa och utvecklingen av suveräna digitala reserver.",
+    "email": {"label": "E‑post", "placeholder": "E‑postadress"},
     "role": {
-      "label": "I'm a",
-      "gov": "Government Representative",
-      "inst": "Institutional Investor",
-      "dev": "Development Partner",
-      "gen": "General Interest"
+      "label": "Jag är",
+      "gov": "Regeringsrepresentant",
+      "inst": "Institutionell investerare",
+      "dev": "Utvecklingspartner",
+      "gen": "Allmänt intresserad"
     },
-    "cta": "Subscribe for Updates",
-    "success": "Thank you - you're on the list."
+    "cta": "Prenumerera på uppdateringar",
+    "success": "Tack – du är med på listan."
   },
   "insights": {
-    "title": "Insights",
-    "subtitle": "Perspectives on sovereign finance, digital reserves, and development impacts.",
+    "title": "Insikter",
+    "subtitle": "Perspektiv på statlig finansiering, digitala reserver och utvecklingseffekter.",
     "items": {
-      "1": {"title": "Sovereign Digital Reserves: A Primer", "excerpt": "How non-inflationary reserves can fund public goods sustainably."},
-      "2": {"title": "Operational Safeguards for National-Scale Infrastructure", "excerpt": "Risk controls, transparency, and institutional-grade processes."},
-      "3": {"title": "Deploying Yield to Development Priorities", "excerpt": "Aligning investment income with measurable public outcomes."}
+      "1": {"title": "Suveräna digitala reserver: en introduktion", "excerpt": "Hur icke‑inflationsdrivna reserver kan finansiera offentliga nyttigheter hållbart."},
+      "2": {"title": "Operativa skydd för infrastruktur i nationell skala", "excerpt": "Riskkontroller, transparens och processer i institutionsklass."},
+      "3": {"title": "Att använda avkastning till utvecklingsprioriteringar", "excerpt": "Att koppla investeringsinkomster till mätbara samhällsresultat."}
     },
-    "readMore": "Read more"
+    "readMore": "Läs mer"
   },
   "faqs": {
-    "title": "FAQs",
-    "1": {"q": "What is Trupasa?", "a": "Trupasa is a sovereign financial infrastructure that enables governments to establish a digital reserve fully backed by U.S. Treasury Bills, generating risk-free yield to fund public projects without creating inflation."},
-    "2": {"q": "How does this avoid inflation?", "a": "Reserves are fully backed by existing assets (T-Bills) rather than newly issued money. Yield funds projects while the principal remains intact and backed."},
-    "3": {"q": "How are reserves safeguarded?", "a": "Through segregated accounts, audited reporting, and institutional-grade controls including KYC/AML and governance oversight."},
-    "4": {"q": "Who is Trupasa for?", "a": "National and subnational governments, and institutional partners seeking transparent, non-inflationary public finance mechanisms."}
+    "title": "Vanliga frågor",
+    "1": {"q": "Vad är Trupasa?", "a": "Trupasa är en suverän finansiell infrastruktur som gör det möjligt för regeringar att etablera en digital reserv som är fullt backad av amerikanska statsskuldväxlar och genererar riskfri avkastning för att finansiera offentliga projekt utan att skapa inflation."},
+    "2": {"q": "Hur undviks inflation?", "a": "Reserverna backas helt av befintliga tillgångar (T‑bills) i stället för nytryckta pengar. Avkastningen finansierar projekt medan kapitalet förblir intakt och backat."},
+    "3": {"q": "Hur skyddas reserverna?", "a": "Genom separata konton, reviderad rapportering och kontroller i institutionsklass inklusive KYC/AML och styrning."},
+    "4": {"q": "Vem riktar sig Trupasa till?", "a": "Nationella och regionala regeringar samt institutionella partners som söker transparenta, icke‑inflationsdrivna offentliga finansieringsmekanismer."}
   },
   "footer": {
-    "copyright": "c 2025 Trupasa. All rights reserved.",
+    "copyright": "© 2025 Trupasa. Alla rättigheter förbehållna.",
     "linkedin": "LinkedIn",
     "twitter": "X",
     "youtube": "YouTube"
   },
-  "lang": {"switch": "Language", "en": "EN", "sv": "SV", "so": "SO"}
+  "lang": {"switch": "Språk", "en": "EN", "sv": "SV", "so": "SO"}
 }

@@ -1,7 +1,7 @@
 import './globals.css';
 import type { Metadata } from 'next';
 import {NextIntlClientProvider} from 'next-intl';
-import {getLocale, getMessages} from 'next-intl/server';
+import {getLocale} from 'next-intl/server';
 import {cookies} from 'next/headers';
 import CookieConsent from '../components/CookieConsent';
 
@@ -27,25 +27,20 @@ export const metadata: Metadata = {
 };
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
-  const locale = await getLocale();
-  const messages = await getMessages();
+  const cookieLocale = cookies().get('NEXT_LOCALE')?.value;
+  const detected = await getLocale();
+  const locale = (cookieLocale && ['en','sv','so'].includes(cookieLocale)) ? cookieLocale : detected;
+  const common = (await import(`../locales/${locale}/common.json`)).default;
   const consentGiven = cookies().get('cookie_consent')?.value === 'true';
   return (
     <html lang={locale} suppressHydrationWarning>
       <body>
-        <NextIntlClientProvider locale={locale} messages={messages}>
+        <NextIntlClientProvider locale={locale} messages={{default: common}}>
           {children}
-          {/* Cookie banner lives client-side */}
           <CookieConsent />
         </NextIntlClientProvider>
-        {/* GA placeholder gated by consent. Replace with real snippet later. */}
         {consentGiven && (
-          <script
-            id="ga-placeholder"
-            dangerouslySetInnerHTML={{
-              __html: 'window.GA_CONSENTED = true;'
-            }}
-          />
+          <script id="ga-placeholder" dangerouslySetInnerHTML={{ __html: 'window.GA_CONSENTED = true;' }} />
         )}
       </body>
     </html>
