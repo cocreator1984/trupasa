@@ -1,0 +1,164 @@
+Here’s a concrete, end-to-end plan to build the Trupasa landing page exactly as defined in the PRD.
+
+Implementation Approach
+
+- Bold foundation: Single, modular landing page with clear sections and anchors.
+- Component-driven: One component per section for clean maintenance and scalability.
+- Multilingual: English baseline with Swedish and Somali via JSON resources and a visible switcher.
+- Performance-first: Optimized images, async scripts, lean JS, Lighthouse-guided.
+
+Tech Stack
+
+- Framework: Next.js 14 (App Router) with static generation.
+- Language: TypeScript for reliability and readability.
+- Styling: Tailwind CSS + CSS variables for theme tokens.
+- i18n: next-intl or next-i18next with simple JSON dictionaries.
+- Icons: Heroicons or Lucide for UI; social icons as SVGs.
+- Forms: Provider abstraction; default to Formspree (no backend) with easy swap to Mailchimp/SendGrid or an
+API route.
+- Analytics: GA4 snippet placeholder (async/defer), cookie banner toggle.
+
+Structure & Files
+
+- Pages and routing
+    - app/layout.tsx: Global HTML, metadata, fonts, theme tokens.
+    - app/page.tsx: Landing page with all sections (SSR-disabled for static export).
+    - app/[locale]/page.tsx: Locale-scoped routing for EN/SV/SO (if using domain/path i18n).
+    - app/api/subscribe/route.ts: Optional serverless endpoint if not using a hosted forms provider.
+- Components (one per section)
+    - components/Header.tsx (nav, language switcher, optional sticky)
+    - components/Hero.tsx (H1, subhead, primary/secondary CTAs)
+    - components/HowItWorks.tsx (4-step explainer with icons)
+    - components/Architecture.tsx (diagram + bullets)
+    - components/Partners.tsx (logo strip/carousel placeholders)
+    - components/Testimonials.tsx (2–3 quotes with optional headshots)
+    - components/FAQs.tsx (accordion list)
+    - components/Insights.tsx (2–3 posts, title/excerpt/link)
+    - components/Newsletter.tsx (email + role dropdown, privacy note)
+    - components/Contact.tsx (form with fields per PRD, optional address)
+    - components/Footer.tsx (quick links, legal, social icons)
+    - components/LanguageSwitcher.tsx (EN/SV/SO with active state)
+    - components/CookieConsent.tsx (EU compliance toggle, stores consent)
+- Content & i18n
+    - locales/en/*.json, locales/sv/*.json, locales/so/*.json (keys per section; flexible for text length)
+    - content/insights/*.json or inline mocks first; optional MDX later.
+
+Design System
+
+- Tokens
+    - Colors: --brand-navy, --gray-600, --trust-green, --accent-blue, --bg.
+    - Typography: Modern sans-serif (e.g., Inter) with clear hierarchy.
+    - Spacing & radius: Consistent paddings, card radius for sections.
+- Components
+    - Buttons: Primary (CTA), Secondary, Link variants.
+    - Cards: For posts, FAQs, testimonials.
+    - Section shells: Consistent max-w, vertical rhythm, headings (<h2>).
+
+Content Mapping (PRD → Sections)
+
+- Header & Navigation: Anchors to “How It Works”, “Architecture”, “Partners”, “Testimonials”, “Insights”,
+“FAQs”, “Contact”; language switcher; optional “Join Waitlist”.
+- Hero: H1 “Non‑Inflationary Digital Reserves for National Prosperity.” Subhead from PRD. Primary CTA “Join the
+Waitlist”; secondary “How it works”.
+- How It Works: 4 steps with icons: Digital Reserve → Invest in Treasuries → Generate Yield → Fund Projects;
+concise bullets.
+- Architecture & Security: Diagram placeholder image + bullets for 100% reserve backing, secure investment
+channel, transparency/audits, KYC/AML, security/auth, reliability, governance.
+- Partners: Placeholder logos; short blurb; “Interested in partnering?” link → Contact.
+- Testimonials: 2–3 placeholders with name/title/affiliation; optional headshots.
+- FAQs: 8–10 curated Q/A reflecting compliance, risk, yield, stability, governance.
+- Insights: 2–3 posts with title/excerpt/thumbnail; “Read more” (to external or placeholder).
+- Newsletter/Waitlist: Email (required) + Role dropdown; inline privacy note.
+- Contact: Name, Organization, Email, Message; optional address/phone; submit confirmation.
+- Footer: Quick links, social icons (LinkedIn/X/YouTube), legal links, copyright, optional disclaimer.
+
+SEO & Metadata
+
+- Page title: “Trupasa – Sovereign Digital Reserves for Public Prosperity”.
+- Meta description: ~155 chars aligned to PRD.
+- Open Graph/Twitter: Title, description, trupasa.jpeg or hero graphic; proper dimensions.
+- Robots/sitemap: public/robots.txt, public/sitemap.xml (static).
+- Semantic HTML: Correct heading levels, landmarks, alt text, labels.
+
+Forms & Integrations
+
+- Newsletter
+    - Phase 1: Formspree (no backend) with spam honeypot; success/error toasts.
+    - Phase 2: Switch to Mailchimp/SendGrid or API route (app/api/subscribe) to persist leads.
+    - Fields: email (required), role (optional), consent checkbox if needed.
+- Contact
+    - Phase 1: Formspree or mailto fallback with validation.
+    - Phase 2: API route integration + spam protection (honeypot/Cloudflare Turnstile).
+- Social
+    - Icons linking out; optional lightweight YouTube embed with click-to-load; optional X widget loaded
+deferred.
+
+Performance
+
+- Images: Use next/image with responsive srcset; compress assets; SVG for logos/icons.
+- CSS/JS: Tailwind JIT; minimal client JS; defer/async scripts.
+- Caching: Long cache for static with hashed filenames.
+- Targets: LCP < 2.0s on 4G; total page < 2MB; Lighthouse Performance ≥ 90.
+
+Accessibility
+
+- Contrast: Meet WCAG AA for text and UI.
+- Keyboard: Focus states, skip-to-content, menu operable via keyboard.
+- ARIA: Labels for nav, forms, accordions; alt text everywhere.
+- Language attributes: Set per locale.
+
+Security & Compliance
+
+- HTTPS-only; HSTS via hosting.
+- Forms: Honeypot field; optional Turnstile/reCAPTCHA if abuse.
+- Privacy: Link in footer; consent banner for analytics in EU; fire GA only after consent.
+
+Styling & Visuals
+
+- Hero background: Abstract map/government + digital overlay; dark overlay for text readability.
+- Diagram: Placeholder “Trupasa System Flow” to be replaced; ensure caption and alt.
+- Partner logos: Monochrome/grayscale; consistent sizing.
+- Testimonials: Clean cards with optional headshot circle.
+
+Scaffolding & Commands
+
+- Create project
+    - npx create-next-app@latest trupasa --ts --app --eslint --tailwind
+- Install i18n and helpers
+    - cd trupasa
+    - npm i next-intl (or next-i18next) and clsx lucide-react
+- Add GA and cookie consent
+    - GA placeholder in app/layout.tsx; cookie component controls script load.
+- Static assets
+    - public/trupasa.jpeg, favicon, social preview image.
+
+Milestones
+
+- M1: Scaffold + design tokens + Header/Hero + i18n baseline (EN) [Day 1–2]
+- M2: Core sections: How It Works, Architecture, Partners, Testimonials [Day 3–4]
+- M3: FAQs, Insights (mock data), Newsletter [Day 5]
+- M4: Contact form, Footer, Social links, legal links [Day 6]
+- M5: SEO tags, Open Graph/Twitter, robots/sitemap, GA placeholder [Day 7]
+- M7: QA, Lighthouse ≥ 90, deploy preview [Day 9]
+
+Acceptance Criteria
+
+- Content parity: All PRD sections present with specified content/structure.
+- Multilingual: Language switcher toggles EN/SV/SO with layout resilience.
+- Forms: Newsletter and Contact submit successfully (provider or API route), with validation and success/error
+feedback.
+- SEO: Meta, Open Graph/Twitter tags correct; robots/sitemap present.
+- Performance: Optimized assets; Lighthouse ≥ 90 across Performance/Accessibility/Best Practices/SEO.
+- Accessibility: Keyboard navigable; correct semantics; labels and alt text.
+- Analytics: GA4 placeholder exists and respects consent.
+- Social: Icons link correctly; optional embeds load deferred.
+
+Risks & Open Questions
+
+- Partners/logos availability: Use placeholders until real assets are provided.
+- Final legal copy: Privacy/Terms/Disclaimer require approval.
+- Form backend choice: Confirm provider (Formspree/Mailchimp) or internal API.
+- Locale routing: Prefer path-based (/en, /sv, /so) or single path with switcher only?
+
+If you’re happy with this plan, I can scaffold the Next.js project and wire up the Header/Hero/i18n first, then
+proceed section by section.

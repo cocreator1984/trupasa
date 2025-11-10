@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --brand-navy: #0B1F3B;
+  --trust-green: #2E7D6A;
+  --accent-blue: #1C6DD0;
+  --bg: #f7f9fc;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background: var(--bg);
+  color: #0d1526;
+}
+
+.container {
+  @apply max-w-6xl mx-auto px-4;
+}
+
